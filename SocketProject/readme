@@ -1,0 +1,30 @@
+Conference Room Reservation Systems are essential for efficiently
+managing conference rooms in EE/CS buildings. They streamline room
+bookings, simplify finding and reserving rooms, expedite the booking
+process, and provide valuable information for decision-making. These
+systems enable students to quickly locate available rooms for homework
+discussions or midterm preparations.
+Security is crucial for these systems. Ensuring system safety by requiring
+usernames and passwords is vital. Only the client should access their
+username and password to prevent unauthorized individuals from booking
+rooms, ensuring availability for actual students. Building a secure, reliable,
+and user-friendly online booking system is of utmost importance.
+
+Specifically, messages containing personal information (e.g., username and
+password) should be encrypted before being sent over the Internet.
+For this project, you will develop a simple conference booking system for
+two buildings, RTH and EEB, available to students. Students can check the
+availability of conference rooms and make reservations for the following
+week. They need to specify the room, day (e.g., Monday, Tuesday), and time
+(e.g., 4 pm) to reserve a room.
+Students can check room availability and book if it's free. They use a client
+interface to connect with the main booking server (serverM), which
+interfaces with backend servers for credential verification and room
+information. The credential verification server (serverC) holds user
+information (username/password pairs), while the room information servers
+(serverRTH and serverEEB) store room details for their respective buildings.
+The main server forwards requests to the appropriate server and relays
+responses back to the client.
+This conference room reservation system aims to provide a seamless and
+efficient process for students seeking study spaces, ensuring a positive
+experience from search to reservation.
